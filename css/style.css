@@ -1,4 +1,4 @@
-.root{
+root{
 --menu-brand-color: #2E2F42;
 --titel-brand-color: #434455;
 --primary-brand-color: #4D5AE5;
@@ -7,6 +7,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    font-style: normal;
     background-color:#FFFFFF;
     color:var(--menu-brand-color);
 }
@@ -45,7 +46,8 @@ color: var(--primary-brand-color);
 }
 .contakt-item{
 padding: 0%;
-border: 0;
+border: 0px;
+font-style: normal;
 line-height: 1,5;
 letter-spacing: 0.02em;
 color: var(--menu-brand-color);}
@@ -76,6 +78,13 @@ display: flex;
 align-items: center;
 letter-spacing: 0.04em;
 color: #FFFFFF;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px 32px;
+gap: 10px;
+width: 169px;
+height: 56px;
 }
 .hero-btn:hover, .hero-btn:focus {
     background: #404BBF;
@@ -158,22 +167,21 @@ color: #E7E9FC;
 background: #F4F4FD;
 border: 1px solid #E7E9FC;
 border-radius: 4px;
-font-family: 'Roboto';
+box-sizing: border-box;
 font-weight: 500;
-line-height: 24px;
+line-height: 1.5;
 display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.04em;
+color:#4D5AE5;
+flex-direction: row;
+align-items: flex-start;
+padding: 12px 24px;
+gap: 10px;
+height: 48px;
 }
 .btn-item:hover, .btn-item:focus {
-font-family: 'Roboto';
-font-weight: 500;
-line-height: 24px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.04em;
 color: #FFFFFF;
 background-color: #4D5AE5;
 }
@@ -187,4 +195,7 @@ letter-spacing: 0.02em;
 line-height: 1,5;
 letter-spacing: 0.02em;
 color:var(--titel-brand-color);
+}
+.logo-footer{
+    color:#F4F4FD;
 }
