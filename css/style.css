@@ -1,8 +1,9 @@
-root{
---menu-brand-color: #2E2F42;
---titel-brand-color: #434455;
---primary-brand-color: #4D5AE5;
---btn-brand-color:#ffffff;
+:root{
+--menu-brand-color--: #2E2F42;
+--titel-brand-color--: #434455;
+--primary-brand-color--: #4D5AE5;
+--aktiv-heder--: #404BBF;
+--btn-brand-color--:#ffffff;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -33,27 +34,31 @@ body{
     color: var(--menu-brand-color);
 }
 .heder-item{
+font-family: inherit;
+font-size: 16px;
 font-weight: 500;
 line-height: 1,5;
 letter-spacing: 0.02em;
 flex: none;
 order: 0;
 flex-grow: 0;
-color: var(--menu-brand-color);
+color: var(--menu-brand-color--);
 }
 .heder-item:hover, .heder-item:focus {
-color: var(--primary-brand-color);
+color: #404BBF;
 }
 .contakt-item{
 padding: 0%;
 border: 0px;
+font-family: inherit;
+font-size: 16px;
 font-style: normal;
 line-height: 1,5;
 letter-spacing: 0.02em;
 color: var(--menu-brand-color);}
 
 .contakt-item:hover, .contakt-item:focus{
-    color: var(--primary-brand-color);
+    color: #404BBF;
 }
 /*section 1*/
 .hero {
@@ -65,26 +70,19 @@ font-size: 56px;
 line-height: 60px;
 text-align: center;
 letter-spacing: 0.02em;
-color: #FFFFFF
+color: var(--btn-brand-color--)
 }
 .hero-btn {
 background: #4D5AE5;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-font-family: 'Roboto';
+font-family: inherit;
+font-size: 16px;
 font-weight: 500;
-line-height: 24px;
-display: flex;
-align-items: center;
+line-height: 1,5;
 letter-spacing: 0.04em;
-color: #FFFFFF;
-display: flex;
-flex-direction: row;
-align-items: flex-start;
+color: var(--btn-brand-color--);
 padding: 16px 32px;
-gap: 10px;
-width: 169px;
-height: 56px;
 }
 .hero-btn:hover, .hero-btn:focus {
     background: #404BBF;
@@ -168,21 +166,18 @@ background: #F4F4FD;
 border: 1px solid #E7E9FC;
 border-radius: 4px;
 box-sizing: border-box;
+font-family: inherit;
+font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
 display: flex;
 align-items: center;
-text-align: center;
 letter-spacing: 0.04em;
 color:#4D5AE5;
-flex-direction: row;
-align-items: flex-start;
 padding: 12px 24px;
-gap: 10px;
-height: 48px;
 }
 .btn-item:hover, .btn-item:focus {
-color: #FFFFFF;
+color: var(--btn-brand-color--);
 background-color: #4D5AE5;
 }
 .titel{
@@ -197,5 +192,11 @@ letter-spacing: 0.02em;
 color:var(--titel-brand-color);
 }
 .logo-footer{
-    color:#F4F4FD;
+font-family: 'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 1,33;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color:#F4F4FD;
 }
